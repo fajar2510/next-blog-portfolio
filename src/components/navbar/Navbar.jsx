@@ -51,8 +51,8 @@ const Navbar = () => {
                             <Link
                                 key={link.id}
                                 href={link.url}
-                                class="flex px-3 text-lg font-medium text-[#5A6E6F]
-                                hover:text-[#BE8779]">
+                                class="flex px-3 text-lg font-normal text-primary
+                                hover:text-secondary hover:font-bold transition ease-in-out duration-300">
                                 {link.title}
                             </Link>
                         ))}
@@ -67,8 +67,8 @@ const Navbar = () => {
                         <Link
                             key={link.id}
                             href={link.url}
-                            class="flex px-3 text-lg font-semibold text-[#5A6E6F]
-                                hover:text-[#BE8779]">
+                            class="flex px-3 text-lg font-semibold text-primary
+                                hover:text-secondary">
                             {link.title}
                         </Link>
                     ))}
@@ -85,14 +85,7 @@ const Navbar = () => {
             </div>
             <div class="navbar-end">
 
-                <div className='flex container px-3'>
-                    <div className='container px-1.5 py-2 bg-[#BE8779]'></div>
-                    <div className='container px-1.5 py-2 bg-[#D5B5A6]'></div>
-                    <div className='container px-1.5 py-2 bg-[#BFCDCB]'></div>
-                    <div className='container px-1.5 py-2 bg-[#5A6E6F]'></div>
-                    <div className='container px-1.5 py-2 bg-[#2C3842]'></div>
 
-                </div>
                 <Button url="/" text="Resume" />
             </div>
         </div>
