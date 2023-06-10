@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const Layout = ({ children }) => {
-    return (
-        <div>
-            <h1 className='text-5xl font-bold text-primary'>Work with me</h1>
-            {children}
-        </div>
-    )
-}
+  return (
+    <div className="flex flex-col mx-[7rem] my-12">
+      <h1 className="text-6xl font-bold text-white">Our Works</h1>
+      {children}
+    </div>
+  );
+};
 
-export default Layout
+export default Layout;
