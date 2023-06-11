@@ -31,7 +31,7 @@ const About = () => {
         </div>
         <div className="w-1/2">
           <h2 className="text-2xl font-bold text-primary">I am doing</h2>
-          <p className=" text-sm text-textLight mt-1.5 text-justify leading-relaxed mb-3">
+          <p className=" text-sm mt-1.5 text-justify leading-relaxed mb-3">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
             sunt laborum ipsam odit error voluptate?
             <br />

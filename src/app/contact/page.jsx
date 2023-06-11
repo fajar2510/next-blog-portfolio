@@ -17,35 +17,39 @@ const Contact = () => {
       <div className="w-1/2 flex items-center justify-start">
         <div className="form-control w-4/5">
           <label className="label">
-            <span className="label-text">What is your name?</span>
+            <span className="text-lg font-normal text-primary">
+              What is your name?
+            </span>
           </label>
           <input
             type="text"
             placeholder="Type name here"
-            className="input input-bordered "
+            className="input input-bordered bg-inherit "
           />
           <label className="label">
-            <span className="label-text">What is your email?</span>
+            <span className="text-lg font-normal text-primary">
+              What is your email?
+            </span>
           </label>
           <input
             type="email"
             placeholder="Type email here"
-            className="input input-bordered x"
+            className="input input-bordered bg-inherit"
           />
           <label className="label">
-            <span className="label-text">Your message</span>
+            <span className="text-lg font-normal text-primary">
+              Your message
+            </span>
           </label>
           <textarea
-            className="textarea textarea-bordered h-24 "
+            className="textarea textarea-bordered h-24 bg-inherit"
             placeholder="Type message here"
           ></textarea>
-          <div className="mt-5 mb-3 border-b border-slate-700" />
+          <div className="my-3" />
           <Button url="/" text="Send to me" />
         </div>
       </div>
-      
     </div>
-    
   );
 };
 
