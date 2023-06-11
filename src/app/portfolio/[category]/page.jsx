@@ -4,22 +4,20 @@ import Link from "next/link";
 const Category = ({ params }) => {
   return (
     <div className="my-5">
-      <h1 className="font-bold text-xl text-primary  py-1.5">
+      <h1 className="font-bold text-2xl text-primary capitalize  py-1.5">
         {params.category}
       </h1>
 
       <div className="flex flex-wrap ">
         {/* kotak kiri */}
         <div className="w-1/2 flex flex-col gap-3 items-start justify-center">
-          <h2 className="font-semibold text-4xl text-white">
-            Creative Portfolio
-          </h2>
-          <p className="text-textLight font-semibold text-sm leading-relaxed">
+          <h2 className="font-semibold text-4xl">Creative Portfolio</h2>
+          <p className="t font-semibold text-sm leading-relaxed">
             Description test whole new world
           </p>
           <Link
             href="/"
-            class="mt-2 px-6 py-2 bg-primary text-white rounded-lg hover:bg-secondary"
+            class="mt-2 px-6 py-2 bg-primary text-white shadow-lg rounded-lg hover:bg-secondary"
           >
             See more
           </Link>

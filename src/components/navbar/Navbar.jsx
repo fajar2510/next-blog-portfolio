@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Button from "../Button/Button";
+import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 
 const links = [
   {
@@ -39,8 +40,8 @@ const links = [
 
 const Navbar = () => {
   return (
-    <div class="flex mx-[7rem] mt-3 shadow-sm">
-      <div class="w-1/3 flex items-center justify-start">
+    <div class="flex mx-[7rem] pt-3 shadow-sm">
+      <div class="w-1/3 flex items-center justify-start ">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
             <svg
@@ -62,11 +63,12 @@ const Navbar = () => {
             tabindex="0"
             class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
+            <DarkModeToggle />
             {links.map((link) => (
               <Link
                 key={link.id}
                 href={link.url}
-                class="flex px-3 text-lg font-normal text-primary
+                class="flex px-3 text-lg font-normal text-white
                                 hover:text-secondary hover:font-bold transition ease-in-out duration-300"
               >
                 {link.title}
@@ -75,17 +77,19 @@ const Navbar = () => {
           </ul>
         </div>
         <Link href="/" class=" normal-case text-xl">
-          Fajar Abdurrohman
+          Fajar&apos;s Portfolio
         </Link>
       </div>
 
-      <div class="w-2/3 flex items-center justify-end">
+      <div class="w-2/3   flex items-center justify-end">
         <ul class="menu menu-horizontal px-1">
+          <DarkModeToggle />
+
           {links.map((link) => (
             <Link
               key={link.id}
               href={link.url}
-              class="flex px-3 text-base font-semibold text-primary
+              class="flex px-3 text-base font-normal 
                                 hover:text-secondary"
             >
               {link.title}
@@ -97,7 +101,7 @@ const Navbar = () => {
             onClick={() => {
               console.log("logout");
             }}
-            className="flex ml-3 items-center px-4 text-sm font-medium bg-primary text-white 
+            className="flex ml-3 items-center px-4 text-sm font-medium bg-primary text-white dark:text-white
                         hover:bg-opacity-75   rounded-lg"
           >
             Logout

@@ -6,6 +6,18 @@
   border: 1px solid rgb(157, 253, 145);
 } */
 
+.dark {
+  @apply bg-dark text-textLight;
+}
+
+.light {
+  @apply bg-white text-dark;
+}
+
+.theme {
+  @apply transition-all duration-1000 ease-in-out;
+}
+
 .gallery {
   @apply container relative h-[18rem] w-[14rem] border-2 border-slate-300 hover:scale-[97%] brightness-90 hover:brightness-150 transition duration-300 ease-in-out;
 }
