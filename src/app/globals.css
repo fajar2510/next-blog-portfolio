@@ -19,15 +19,15 @@
 }
 
 .gallery {
-  @apply container relative h-[18rem] w-[14rem] border-2 border-slate-300 hover:scale-[97%] brightness-90 hover:brightness-150 transition duration-300 ease-in-out;
+  @apply container relative h-[18rem] w-[14rem] border-2 border-slate-700 dark:border-slate-300 hover:scale-[97%] brightness-90 hover:brightness-150 transition duration-300 ease-in-out;
 }
 
 .gallery-title {
-  @apply absolute right-5 bottom-3 text-2xl text-white font-semibold hover:text-primary;
+  @apply absolute right-5 bottom-3 text-2xl text-white font-semibold drop-shadow-2xl hover:text-primary;
 }
 
 .blog-list {
-  @apply flex gap-8 hover:bg-slate-700  overflow-hidden rounded-bl-lg rounded-tl-lg;
+  @apply flex gap-8 hover:bg-slate-300 dark:hover:bg-slate-700  overflow-hidden rounded-bl-lg rounded-tl-lg;
 }
 
 .blog-image {
